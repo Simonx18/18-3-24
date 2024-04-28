@@ -1,112 +1,22 @@
-nav {
-    height: 100px;
-    background-color: aqua;
-}
-
-.nav-search-container input,
-.nav-search-container button {
-    width: 255px;
-}
-
-.toast {
-    position: fixed;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    z-index: 1;
-    background-color: aqua;
-}
-
-.spinner-loading-page {
-    height: 100vh;
-    position: absolute;
-    inset: 0;
-    background-color: white;
-    z-index: 1;
-}
-
-.loader {
-    position: absolute;
-    top: 45%;
-    left: 48%;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: inline-block;
-    border-top: 3px solid aqua;
-    border-right: 3px solid transparent;
-    box-sizing: border-box;
-    animation: spinner-rotation 1s linear infinite;
-}
-
-.card-container {
-    height: 300px;
-    width: 300px;
-    position: relative;
-}
-
-.card-container div {
-    background-color: rgba(0, 0, 0, 0.452);
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: all 250ms;
-}
-
-.card-container div:hover {
-    opacity: 1;
-}
-
-.card-container div ion-icon:first-child {
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-    margin-right: 20px;
-}
-
-.card-container div ion-icon:last-child {
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-    margin-left: 20px;
-}
-
-img {
+.card img {
+    aspect-ratio: 1/1.7;
+    object-fit: cover;
     width: 100%;
-    height: 100%;
+  }
+
+.book-purchased{
+    border: 5px solid blueviolet;
 }
 
-@media only screen and (min-width: 768px) {
-    .nav-search-container button {
-        width: 60px;
-    }
-
-    .card-container {
-        height: 220px;
-        width: 220px;
-    }
+.hide-book{
+  display: none;
 }
 
-@media only screen and (min-width: 1024px) {
-    .card-container {
-        height: 180px;
-        width: 180px;
-    }
-}
+/* PAGINA DETTAGLI */
 
-@media only screen and (min-width: 1440px) {
-    .card-container {
-        height: 250px;
-        width: 250px;
-    }
-}
 
-@keyframes spinner-rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+.card-details img{
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
 }
